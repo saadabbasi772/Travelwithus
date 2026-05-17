@@ -347,64 +347,118 @@
 
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-24 px-6">
+<!-- PROFESSIONAL CONTACT FORM - FORMSpree -->
+<section id="contact" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-black px-4 py-12">
 
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+  <div class="w-full max-w-3xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-8 md:p-12 reveal">
 
-    <div class="reveal">
-      <h2 class="text-5xl font-bold gradient-text">
-        Contact Us
-      </h2>
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        Contact <span class="text-cyan-400">SAAD ABBASI</span>
+      </h1>
 
-      <p class="text-gray-300 mt-6 leading-8">
-        Ready for your next journey? Contact TRAVEL WITH SAAD and start your unforgettable adventure today.
+      <p class="text-gray-300 text-lg">
+        Let's build something amazing together ✨
       </p>
-
-      <div class="mt-8 space-y-4">
-        <p class="text-lg">
-          <i class="fa-solid fa-phone text-cyan-400 mr-3"></i>
-          03557775532
-        </p>
-
-        <p class="text-lg">
-          <i class="fa-solid fa-envelope text-cyan-400 mr-3"></i>
-          saadabbasi36@icloud.com
-        </p>
-      </div>
     </div>
 
-    <!-- FORM -->
-    <div class="glass p-8 rounded-3xl reveal">
+    <!-- Form -->
+    <form
+      action="https://formspree.io/f/xvzyplrz"
+      method="POST"
+      class="space-y-6"
+    >
 
-      <!-- FORMSPREE FORM -->
-      <form
-        action="https://formspree.io/f/xvzyplrz"
-        method="POST"
-        class="space-y-5"
+      <!-- Name -->
+      <div>
+        <label class="block text-white mb-2 text-sm font-semibold">
+          Full Name
+        </label>
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your full name"
+          required
+          class="w-full px-5 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-400 transition"
+        >
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-white mb-2 text-sm font-semibold">
+          Email Address
+        </label>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+          class="w-full px-5 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-400 transition"
+        >
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label class="block text-white mb-2 text-sm font-semibold">
+          Phone Number
+        </label>
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="+92 355 7775532"
+          class="w-full px-5 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-400 transition"
+        >
+      </div>
+
+      <!-- Subject -->
+      <div>
+        <label class="block text-white mb-2 text-sm font-semibold">
+          Subject
+        </label>
+
+        <input
+          type="text"
+          name="subject"
+          placeholder="Website Development / Travel Booking / Design"
+          class="w-full px-5 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-400 transition"
+        >
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label class="block text-white mb-2 text-sm font-semibold">
+          Your Message
+        </label>
+
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Write your message here..."
+          required
+          class="w-full px-5 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-400 transition resize-none"
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-bold text-lg hover:scale-105 transition duration-300 shadow-lg"
       >
-        <label class="block">
-          <span class="text-lg font-semibold mb-2 block">Your email:</span>
-          <input type="email" name="email" placeholder="Enter your email"
-            class="w-full p-4 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-cyan-400 transition">
-        </label>
-        
-        <label class="block">
-          <span class="text-lg font-semibold mb-2 block">Your message:</span>
-          <textarea name="message" placeholder="Enter your message" rows="5"
-            class="w-full p-4 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-cyan-400 transition resize-none"></textarea>
-        </label>
-        
-        <button type="submit"
-          class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 duration-300 font-bold text-lg">
-          Send
-        </button>
-      </form>
+        Send Message 🚀
+      </button>
 
+    </form>
+
+    <!-- Footer -->
+    <div class="text-center mt-8 text-gray-400 text-sm">
+      © 2026 SAAD ABBASI — All Rights Reserved
     </div>
 
   </div>
-
 </section>
 
 <!-- FOOTER -->
