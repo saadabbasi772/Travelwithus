@@ -378,38 +378,28 @@
     <div class="glass p-8 rounded-3xl reveal">
 
       <!-- FORMSPREE FORM -->
-      <div data-fs-success>Thanks for your submission!</div>
-      <div data-fs-error>Oops! There was a problem submitting your form.</div>
-      <form id="my-form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" data-fs-field placeholder="Your Email"
-          class="w-full p-4 rounded-xl bg-black/30 border border-white/10 outline-none" />
-        <span data-fs-error="email"></span>
+      <form
+        action="https://formspree.io/f/xvzyplrz"
+        method="POST"
+        class="space-y-5"
+      >
+        <label class="block">
+          <span class="text-lg font-semibold mb-2 block">Your email:</span>
+          <input type="email" name="email" placeholder="Enter your email"
+            class="w-full p-4 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-cyan-400 transition">
+        </label>
         
-        <label for="message">Message:</label>
-        <input type="text" id="message" name="message" data-fs-field placeholder="Your Message"
-          class="w-full p-4 rounded-xl bg-black/30 border border-white/10 outline-none" />
-        <span data-fs-error="message"></span>
+        <label class="block">
+          <span class="text-lg font-semibold mb-2 block">Your message:</span>
+          <textarea name="message" placeholder="Enter your message" rows="5"
+            class="w-full p-4 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-cyan-400 transition resize-none"></textarea>
+        </label>
         
-        <button type="submit" data-fs-submit-btn
-          class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 duration-300 font-bold text-lg mt-4">
-          Submit
+        <button type="submit"
+          class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 duration-300 font-bold text-lg">
+          Send
         </button>
       </form>
-
-      <!-- Formspree Scripts -->
-      <script>
-        window.formspree =
-          window.formspree ||
-          function () {
-            (formspree.q = formspree.q || []).push(arguments);
-          };
-        formspree("initForm", {
-          formElement: "#my-form",
-          formId: "mgoqwdbj",
-        });
-      </script>
-      <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
     </div>
 
